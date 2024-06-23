@@ -1,0 +1,579 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>YouTube Copy</title>
+        <link rel="stylesheet" href="styles/video.css">
+        <link rel="stylesheet" href="styles/header.css">
+        <link rel="stylesheet" href="styles/general.css">
+        <link rel="stylesheet" href="styles/sidebar.css">
+
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    </head>
+    <body>
+        <!--Inline-Block Elements (As much space as it needs)-->
+        <header class="youtube-header">
+            <div class="left-section">
+                <img class="hamburger-menu" 
+                src="icons/hamburger-menu.svg">
+                <img class="youtube-logo" 
+                src="icons/youtube-logo.svg">  
+            </div>
+            <div class="mid-section">      
+                <input class="searchbar" type="text"placeholder="Search">
+                <button class="search-button">
+                    <img class="search-icon" src="icons/search.svg">
+                    <div class="tooltip">Search</div>
+                </button>
+                <button class="voice-search-button">
+                    <img class="voice-search-icon" src="icons/voice-search-icon.svg">
+                    <div class="tooltip">Search with your voice</div>
+                </button>
+            </div>
+            <div class="right-section">
+                <div class="upload-icon-container">
+                    <img class="upload-icon" src="icons/upload.svg">
+                    <div class="tooltip">Create</div>
+                </div>
+                <div class="youtube-apps-icon-container">
+                    <img class="youtube-apps-icon" src="icons/youtube-apps.svg">
+                    <div class="tooltip">YouTube apps</div>
+                </div>
+                <div class="notifications-icon-container">
+                    <img class="notifications-icon" src="icons/notifications.svg">
+                    <div class="notifications-count">3</div>
+                    <div class="tooltip">Notifications</div>
+                </div>
+                <img class="current-user-picture" src="channel-pictures-2/main.jpg">
+            </div>
+        </header>
+        <!--Block Elements (Entire Line)-->
+        <nav class="sidebar">
+            <div class="sidebar-link">
+                <img src="icons/home.svg">
+                <div>Home</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/explore.svg">
+                <div>Explore</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/subscriptions.svg">
+                <div>Subscriptions</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/originals.svg">
+                <div>Originals</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/youtube-music.svg">
+                <div>YouTube Music</div>
+            </div>
+            <div class="sidebar-link">
+                <img src="icons/library.svg">
+                <div>Library</div>
+            </div>        
+        </nav>
+        <!--Inline Element appears within a line of text , i.e. <strong>-->
+        <main>
+            <section class="video-grid">
+                <!--Video 1 to 4-->
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=OVXSWE7KE68" target="_blank">
+                            <img class="thumbnail" src="thumbnails-2/1.png">
+                        </a>
+                        <div class="video-time">15:01</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="video-channel">
+                            <div class="video-channel-container">
+                                <a href="https://www.youtube.com/@PintFrumpyrat" target="_blank">
+                                    <img class="channel-picture" src="channel-pictures-2/image.png">
+                                </a>
+                                <div class="video-channel-tooltip">    
+                                    <img class="video-channel-tooltip-picture" src="channel-pictures-2/image.png">
+                                    <div>
+                                        <p class="video-channel-tooltip-author">
+                                            Pint
+                                        </p>
+                                        <p class="video-channel-tooltip-info">
+                                            319K subscribers
+                                        </p>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=OVXSWE7KE68" target="_blank" class="video-title-link">
+                                <p class="video-title">
+                                    10,000 Hours of Black Mage
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                Pint
+                            </p>
+                            <p class="video-stats">
+                                1.6M views &#183; 2 years ago
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=fBl2hoA9nU0" target="_blank">
+                            <img class="thumbnail" src="thumbnails-2/2.png">
+                        </a>
+                        <div class="video-time">1:29:52</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="video-channel">
+                            <div class="video-channel-container">
+                                <a href="https://www.youtube.com/@MagicTheNoah" target="_blank">
+                                    <img class="channel-picture" src="channel-pictures-2/image2.png">
+                                </a>                            
+                                <div class="video-channel-tooltip">    
+                                    <img class="video-channel-tooltip-picture" src="channel-pictures-2/image2.png">
+                                    <div>
+                                        <p class="video-channel-tooltip-author">
+                                            Magic The Noah   
+                                        </p>
+                                        <p class="video-channel-tooltip-info">
+                                            1M subscribers
+                                        </p>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=fBl2hoA9nU0" target="_blank" class="video-title-link">
+                                <p class="video-title">
+                                    I Made A Game That's Impossible to Beat
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                Magic The Noah
+                            </p>
+                            <p class="video-stats">
+                                1.8M views &#183; 2 months ago
+                            </p>            
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=q5hx3tW3-is" target="_blank">
+                            <img class="thumbnail" src="thumbnails-2/3.png">
+                        </a>
+                        <div class="video-time">1:15:05</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="video-channel">
+                            <div class="video-channel-container">
+                                <a href="https://www.youtube.com/@dougdougdoug" target="_blank">
+                                    <img class="channel-picture" src="channel-pictures-2/image3.png">
+                                </a>                            
+                                <div class="video-channel-tooltip">    
+                                    <img class="video-channel-tooltip-picture" src="channel-pictures-2/image3.png">
+                                    <div>
+                                        <p class="video-channel-tooltip-author">
+                                            DougDougDoug                                    
+                                        </p>
+                                        <p class="video-channel-tooltip-info">
+                                            644K subscribers
+                                        </p>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                    
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=q5hx3tW3-is" target="_blank" class="video-title-link">
+                                <p class="video-title">
+                                    Title: Ford Announces the Model T - Breaking News Ep. 1
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                DougDougDoug
+                            </p>
+                            <p class="video-stats">
+                                377K views &#183; 9 days ago
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=XAvYVd8Qat4" target="_blank">
+                            <img class="thumbnail" src="thumbnails-2/4.png">
+                        </a>
+                        <div class="video-time">58:29</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="video-channel">
+                            <div class="video-channel-container">
+                                <a href="https://www.youtube.com/@ZeroLenny" target="_blank">
+                                    <img class="channel-picture" src="channel-pictures-2/image4.png">
+                                </a>                            
+                                <div class="video-channel-tooltip">    
+                                    <img class="video-channel-tooltip-picture" src="channel-pictures-2/image4.png">
+                                    <div>
+                                        <p class="video-channel-tooltip-author">
+                                            ZeroLenny                                    
+                                        </p>
+                                        <p class="video-channel-tooltip-info">
+                                            320K subscribers
+                                        </p>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=XAvYVd8Qat4" target="_blank" class="video-title-link">
+                                <p class="video-title">
+                                    Dark Souls DLC BUT With The IGN Guide                                
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                ZeroLenny
+                            </p>
+                            <p class="video-stats">
+                                254K views &#183; 5 days ago
+                            </p>            
+                        </div>
+                    </div>
+                </div>
+                <!--Video 5 to 8-->
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=S0RSf9D3W6Q" target="_blank">
+                            <img class="thumbnail" src="thumbnails-2/5.png">
+                        </a>
+                        <div class="video-time">17:09</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="video-channel">
+                            <div class="video-channel-container">
+                                <a href="https://www.youtube.com/@PointlessHub" target="_blank">
+                                    <img class="channel-picture" src="channel-pictures-2/image5.png">
+                                </a>                            
+                                <div class="video-channel-tooltip">    
+                                    <img class="video-channel-tooltip-picture" src="channel-pictures-2/image5.png">
+                                    <div>
+                                        <p class="video-channel-tooltip-author">
+                                            PointlessHub
+                                        </p>
+                                        <p class="video-channel-tooltip-info">
+                                            697K subscribers
+                                        </p>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=S0RSf9D3W6Q" target="_blank" class="video-title-link">
+                                <p class="video-title">
+                                    Moonfall: The Greatest Disaster You've Never Seen
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                PointlessHub
+                            </p>
+                            <p class="video-stats">
+                                2.9M views &#183; 1 year ago
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=JBS3w5OknZo" target="_blank">
+                            <img class="thumbnail" src="thumbnails-2/6.png">
+                        </a>
+                        <div class="video-time">5:08</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="video-channel">
+                            <div class="video-channel-container">
+                                <a href="https://www.youtube.com/@g-man2141" target="_blank">
+                                    <img class="channel-picture" src="channel-pictures-2/image6.png">
+                                </a>                            
+                                <div class="video-channel-tooltip">    
+                                    <img class="video-channel-tooltip-picture" src="channel-pictures-2/image6.png">
+                                    <div>
+                                        <p class="video-channel-tooltip-author">
+                                            Maciej Nowicki        
+                                        </p>
+                                        <p class="video-channel-tooltip-info">
+                                            22.2K subscribers
+                                        </p>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                    
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=JBS3w5OknZo" target="_blank" class="video-title-link">
+                                <p class="video-title">
+                                    Hotline Miami 2: Wrong Number Soundtrack - Ms. Minnie
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                Maciej Nowicki
+                            </p>
+                            <p class="video-stats">
+                                1.6M views &#183; 9 years ago
+                            </p>            
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=FjpFiREE5cQ" target="_blank">
+                            <img class="thumbnail" src="thumbnails-2/7.png">
+                        </a>
+                        <div class="video-time">9:21:07</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="video-channel">
+                            <div class="video-channel-container">
+                                <a href="https://www.youtube.com/channel/UCvaTdHTWBGv3MKj3KVqJVCw" target="_blank">
+                                    <img class="channel-picture" src="channel-pictures-2/image7.png">
+                                </a>
+                                <div class="video-channel-tooltip">    
+                                    <img class="video-channel-tooltip-picture" src="channel-pictures-2/image7.png">
+                                    <div>
+                                        <p class="video-channel-tooltip-author">
+                                            Okayu Ch. 猫又おかゆ
+                                        </p>
+                                        <p class="video-channel-tooltip-info">
+                                            1.81M subscribers
+                                        </p>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=FjpFiREE5cQ" target="_blank" class="video-title-link">
+                                <p class="video-title">
+                                    【 龍が如く0 】 サブクエ最終回だああッ🔥🔥🔥 | YAKUZA ZERO #13【 猫又...
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                RealLifeLore
+                            </p>
+                            <p class="video-stats">
+                                149K views &#183; Streamed 13 days
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=FigIAAYHoW8" target="_blank">
+                            <img class="thumbnail" src="thumbnails-2/8.png">
+                        </a>
+                        <div class="video-time">42:47</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="video-channel">
+                            <div class="video-channel-container">
+                                <a href="https://www.youtube.com/@ymfah" target="_blank">
+                                    <img class="channel-picture" src="channel-pictures-2/image8.png">
+                                </a>                            
+                                <div class="video-channel-tooltip">    
+                                    <img class="video-channel-tooltip-picture" src="channel-pictures-2/image8.png">
+                                    <div>
+                                        <p class="video-channel-tooltip-author">
+                                            ymfah
+                                        </p>
+                                        <p class="video-channel-tooltip-info">
+                                            1.15M subscribers
+                                        </p>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=FigIAAYHoW8" target="_blank" class="video-title-link">
+                                <p class="video-title">
+                                    Top Gear - Dark Souls 2 Special
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                ymfah
+                            </p>
+                            <p class="video-stats">
+                                1.6M views &#183; 9 months ago
+                            </p>            
+                        </div>
+                    </div>
+                </div>
+                <!--Video 9 to 12-->
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=PQk5NVSJSA0" target="_blank">
+                            <img class="thumbnail" src="thumbnails-2/9.png">
+                        </a>
+                        <div class="video-time">1:53</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="video-channel">
+                            <div class="video-channel-container">
+                                <a href="https://www.youtube.com/@galactichole" target="_blank">
+                                    <img class="channel-picture" src="channel-pictures-2/image9.png">
+                                </a>                            
+                                <div class="video-channel-tooltip">    
+                                    <img class="video-channel-tooltip-picture" src="channel-pictures-2/image9.png">
+                                    <div>
+                                        <p class="video-channel-tooltip-author">
+                                            Galactic Hole     
+                                        </p>
+                                        <p class="video-channel-tooltip-info">
+                                            70.1K subscribers
+                                        </p>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                    
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=PQk5NVSJSA0" target="_blank" class="video-title-link">
+                                <p class="video-title">
+                                    Discord sings Revenge
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                Galactic Hole
+                            </p>
+                            <p class="video-stats">
+                                1M views &#183; 4 years ago
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=A_rK2tAIFLA" target="_blank">
+                            <img class="thumbnail" src="thumbnails-2/10.png">
+                        </a>
+                        <div class="video-time">2:48:59</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="video-channel">
+                            <div class="video-channel-container">
+                                <a href="https://www.youtube.com/@Nexpo" target="_blank">
+                                    <img class="channel-picture" src="channel-pictures-2/image10.png">
+                                </a>                            
+                                <div class="video-channel-tooltip">    
+                                    <img class="video-channel-tooltip-picture" src="channel-pictures-2/image10.png">
+                                    <div>
+                                        <p class="video-channel-tooltip-author">
+                                            Nexpo
+                                        </p>
+                                        <p class="video-channel-tooltip-info">
+                                            3.33M subscribers
+                                        </p>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=A_rK2tAIFLA" target="_blank" class="video-title-link">
+                                <p class="video-title">
+                                    PETSCOP: The Darkest Game You Cannot Play                                
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                Nexpo
+                            </p>
+                            <p class="video-stats">
+                                5.2M views &#183; 9 months ago
+                            </p>            
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=F-yEoHL7MYY" target="_blank">
+                            <img class="thumbnail" src="thumbnails-2/11.png">
+                        </a>
+                        <div class="video-time">53:47</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="video-channel">
+                            <div class="video-channel-container">
+                                <a href="https://www.youtube.com/@PewDiePie" target="_blank">
+                                    <img class="channel-picture" src="channel-pictures-2/image11.png">
+                                </a>                            
+                                <div class="video-channel-tooltip">    
+                                    <img class="video-channel-tooltip-picture" src="channel-pictures-2/image11.png">
+                                    <div>
+                                        <p class="video-channel-tooltip-author">
+                                            PewDiePie
+                                        </p>
+                                        <p class="video-channel-tooltip-info">
+                                            111M subscribers
+                                        </p>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=F-yEoHL7MYY" target="_blank" class="video-title-link">
+                                <p class="video-title">
+                                    I <span style="text-decoration:line-through">tried to</span> beat Elden Ring Without Dying..
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                PewDiePie
+                            </p>
+                            <p class="video-stats">
+                                12M views &#183; 2 years ago
+                            </p>   
+                        </div>
+                    </div>
+                </div>
+                <div class="video-preview">
+                    <div class="thumbnail-row">
+                        <a href="https://www.youtube.com/watch?v=PymEijjtUww" target="_blank">
+                            <img class="thumbnail" src="thumbnails-2/12.png">
+                        </a>
+                        <div class="video-time">1:04:14</div>
+                    </div>
+                    <div class="video-info-grid">
+                        <div class="video-channel">
+                            <div class="video-channel-container">
+                                <a href="https://www.youtube.com/@LimitBreakers" target="_blank">
+                                    <img class="channel-picture" src="channel-pictures-2/image12.png">
+                                </a>                            
+                                <div class="video-channel-tooltip">    
+                                    <img class="video-channel-tooltip-picture" src="channel-pictures-2/image12.png">
+                                    <div>
+                                        <p class="video-channel-tooltip-author">
+                                            Limit Breakers
+                                        </p>
+                                        <p class="video-channel-tooltip-info">
+                                            436K subscribers
+                                        </p>    
+                                    </div>
+                                </div>
+                            </div>
+                        </div>                    
+                        <div class="video-info">
+                            <a href="https://www.youtube.com/watch?v=PymEijjtUww" target="_blank" class="video-title-link">
+                                <p class="video-title">
+                                    Everything about SLEEP - Elden Ring
+                                </p>
+                            </a>
+                            <p class="video-author">
+                                Limit Breakers
+                            </p>
+                            <p class="video-stats">
+                                4.6K views &#183; 1 hour ago
+                            </p>            
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </main>
+    </body>
+</html> 
