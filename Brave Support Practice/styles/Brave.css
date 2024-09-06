@@ -176,7 +176,7 @@ main {
 
 .FAQ-section {
     border-top: 1.6px #495057 solid;
-    margin: 0px 179px 0px 179px;
+    margin: 0px 25vh;
 }
 
 .FAQ-header {
@@ -209,7 +209,7 @@ main {
 
 .FAQ-item {
     flex: 1;
-    width: 545px;
+    width: 77vh;
     display: flex;
     align-items: center;
     justify-content: space-between;
