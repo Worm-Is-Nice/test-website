@@ -1,0 +1,102 @@
+body {
+    margin: 0px;
+    padding: 0px;
+    height: 100vh;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+main {
+    flex: 1;
+    display: flex;
+    justify-content: space-between;
+    max-width: 500px;
+}
+
+@property --angle {
+    syntax: "<angle>";
+    initial-value: 0deg;
+    inherits: false;
+}
+
+.YouTube-button {
+    position: relative;
+    padding: 25px 48px;
+    border: 2px black solid;
+    border-radius: 40px;
+    background-color: white;
+    transition: 0.3s;
+}
+
+.YouTube-button img{
+    height: 25px;
+    display: block;
+}
+
+.YouTube-button:hover:before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.YouTube-button:hover::after, .YouTube-button:hover:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), red, black, red, black, red);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 40px;
+    animation: 3s spin linear infinite;
+}
+
+.Brave-button {
+    padding: 25px;
+    border: 2px rgb(91, 91, 91) solid;
+    background-color: gray;
+    border-radius: 40px;
+    transition: 0.3s;
+    position: relative;
+}
+
+.Brave-button img{
+    height: 25px;
+    display: block;
+}
+
+.Brave-button:hover:before {
+    filter: blur(1.5rem);
+    opacity: 0.5;
+    transition: 0.3s;
+}
+
+.Brave-button:hover::after, .Brave-button:hover:before {
+    content: '';
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-image: conic-gradient(from var(--angle), orangered, rgb(91, 91, 91), orangered, rgb(91, 91, 91), orangered);
+    top: 50%;
+    left: 50%;
+    translate: -50% -50%;
+    z-index: -1;
+    padding: 3px;
+    border-radius: 40px;
+    animation: 3s spin linear infinite;
+}
+
+@keyframes spin {
+    from {
+        --angle: 0deg;
+    }
+
+    to {
+        --angle: 360deg;
+    }
+}
