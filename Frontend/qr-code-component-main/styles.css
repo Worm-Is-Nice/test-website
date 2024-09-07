@@ -1,5 +1,9 @@
 body {
-  padding: 104.5px 608px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  
   margin: 0px;
   background-color: hsl(212, 45%, 89%);
 }
