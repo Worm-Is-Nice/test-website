@@ -1,0 +1,51 @@
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+
+  margin: 0px;
+  background-color: hsl(212, 45%, 89%);
+  /*
+  background-image: url(images/background.jpg);
+  background-size: cover;
+  */
+}
+
+main {
+  background-color: hsl(0, 0%, 100%);
+  height: 470px;
+  width: 290px;
+  padding: 15px;
+
+  font-family: Outfit, Arial, Helvetica, sans-serif;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  border-radius: 15px;
+}
+
+main img {
+  width: 290px;
+  border-radius: 15px;
+}
+
+.title {
+  color: hsl(218, 44%, 22%);
+  font-weight: 700;
+  font-size: 20px;
+  width: 85%;
+  text-align: center;
+  margin: 20px 0px;
+}
+
+.paragraph {
+  color: hsl(216, 15%, 48%);
+  font-weight: 400;
+  font-size: 15px;
+  width: 85%;
+  text-align: center;
+  line-height: 22px;
+}
