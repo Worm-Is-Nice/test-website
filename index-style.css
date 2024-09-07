@@ -1,102 +1,190 @@
 body {
-    margin: 0px;
-    padding: 0px;
-    height: 100vh;
+  margin: 0px;
+  padding: 0px;
+  height: 90vh;
+  width: 90vw;
+  padding: 5vh 5vw;
 
-    display: flex;
-    align-items: center;
-    justify-content: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 main {
-    flex: 1;
-    display: flex;
-    justify-content: space-between;
-    max-width: 500px;
+  flex: 1;
+  display: grid;
+  column-gap: 10vw;
+  row-gap: 10vh;
+}
+
+main a {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 @property --angle {
-    syntax: "<angle>";
-    initial-value: 0deg;
-    inherits: false;
+  syntax: "<angle>";
+  initial-value: 0deg;
+  inherits: false;
 }
 
 .YouTube-button {
-    position: relative;
-    padding: 25px 48px;
-    border: 2px black solid;
-    border-radius: 40px;
-    background-color: white;
-    transition: 0.3s;
+  flex: 1;
+  position: relative;
+  padding: 25px 0px;
+  border: 2px black solid;
+  border-radius: 40px;
+  background-color: white;
+  transition: 0.3s;
 }
 
-.YouTube-button img{
-    height: 25px;
-    display: block;
+.YouTube-button img {
+  height: 5vh;
+  display: block;
 }
 
 .YouTube-button:hover:before {
-    filter: blur(1.5rem);
-    opacity: 0.5;
-    transition: 0.3s;
+  filter: blur(1.5rem);
+  opacity: 0.5;
+  transition: 0.3s;
 }
 
-.YouTube-button:hover::after, .YouTube-button:hover:before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-image: conic-gradient(from var(--angle), red, black, red, black, red);
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    z-index: -1;
-    padding: 3px;
-    border-radius: 40px;
-    animation: 3s spin linear infinite;
+.YouTube-button:hover::after,
+.YouTube-button:hover:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(
+    from var(--angle),
+    red,
+    black,
+    red,
+    black,
+    red
+  );
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 40px;
+  animation: 3s spin linear infinite;
 }
 
 .Brave-button {
-    padding: 25px;
-    border: 2px rgb(91, 91, 91) solid;
-    background-color: gray;
-    border-radius: 40px;
-    transition: 0.3s;
-    position: relative;
+  flex: 1;
+  padding: 25px 0px;
+  border: 2px rgb(91, 91, 91) solid;
+  background-color: gray;
+  border-radius: 40px;
+  transition: 0.3s;
+  position: relative;
 }
 
-.Brave-button img{
-    height: 25px;
-    display: block;
+.Brave-button img {
+  height: 5vh;
+  display: block;
 }
 
 .Brave-button:hover:before {
-    filter: blur(1.5rem);
-    opacity: 0.5;
-    transition: 0.3s;
+  filter: blur(1.5rem);
+  opacity: 0.5;
+  transition: 0.3s;
 }
 
-.Brave-button:hover::after, .Brave-button:hover:before {
-    content: '';
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-image: conic-gradient(from var(--angle), orangered, rgb(91, 91, 91), orangered, rgb(91, 91, 91), orangered);
-    top: 50%;
-    left: 50%;
-    translate: -50% -50%;
-    z-index: -1;
-    padding: 3px;
-    border-radius: 40px;
-    animation: 3s spin linear infinite;
+.Brave-button:hover::after,
+.Brave-button:hover:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(
+    from var(--angle),
+    orangered,
+    rgb(91, 91, 91),
+    orangered,
+    rgb(91, 91, 91),
+    orangered
+  );
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 40px;
+  animation: 3s spin linear infinite;
+}
+
+.Frontend-button {
+  flex: 1;
+  position: relative;
+  padding: 25px 0px;
+  border: 2px black solid;
+  border-radius: 40px;
+  background-color: white;
+  transition: 0.3s;
+}
+
+.Frontend-button img {
+  height: 5vh;
+  display: block;
+}
+
+.Frontend-button:hover:before {
+  filter: blur(1.5rem);
+  opacity: 0.5;
+  transition: 0.3s;
+}
+
+.Frontend-button:hover::after,
+.Frontend-button:hover:before {
+  content: "";
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-image: conic-gradient(
+    from var(--angle),
+    skyblue,
+    darkblue,
+    skyblue,
+    darkblue,
+    skyblue
+  );
+  top: 50%;
+  left: 50%;
+  translate: -50% -50%;
+  z-index: -1;
+  padding: 3px;
+  border-radius: 40px;
+  animation: 3s spin linear infinite;
 }
 
 @keyframes spin {
-    from {
-        --angle: 0deg;
-    }
+  from {
+    --angle: 0deg;
+  }
 
-    to {
-        --angle: 360deg;
-    }
+  to {
+    --angle: 360deg;
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  main {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 768px) {
+  main {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  main {
+    grid-template-columns: 1fr 1fr 1fr;
+  }
 }
