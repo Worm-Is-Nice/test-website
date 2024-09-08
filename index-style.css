@@ -33,10 +33,9 @@ main a {
   flex: 1;
   position: relative;
   padding: 25px 0px;
-  border: 2px black solid;
   border-radius: 40px;
-  background-color: white;
   transition: 0.3s;
+  background-color: white;
 }
 
 .YouTube-button img {
@@ -59,33 +58,38 @@ main a {
   background-image: conic-gradient(
     from var(--angle),
     red,
-    black,
+    rgb(91, 91, 91, 0),
+    rgb(91, 91, 91, 0),
     red,
-    black,
+    rgb(91, 91, 91, 0),
+    rgb(91, 91, 91, 0),
     red
   );
   top: 50%;
   left: 50%;
   translate: -50% -50%;
   z-index: -1;
-  padding: 3px;
+  padding: 2px;
   border-radius: 40px;
-  animation: 3s spin linear infinite;
+  animation: 5s spin linear infinite;
 }
 
 .Brave-button {
   flex: 1;
   padding: 25px 0px;
-  border: 2px rgb(91, 91, 91) solid;
-  background-color: gray;
   border-radius: 40px;
   transition: 0.3s;
   position: relative;
+  background-color: rgb(228, 228, 228);
 }
 
 .Brave-button img {
   height: 5vh;
   display: block;
+}
+
+.Brave-button:hover {
+  background-color: rgb(228, 228, 228);
 }
 
 .Brave-button:hover:before {
@@ -103,16 +107,18 @@ main a {
   background-image: conic-gradient(
     from var(--angle),
     orangered,
-    rgb(91, 91, 91),
+    rgb(91, 91, 91, 0),
+    rgb(91, 91, 91, 0),
     orangered,
-    rgb(91, 91, 91),
+    rgba(91, 91, 91, 0),
+    rgb(91, 91, 91, 0),
     orangered
   );
   top: 50%;
   left: 50%;
   translate: -50% -50%;
   z-index: -1;
-  padding: 3px;
+  padding: 2px;
   border-radius: 40px;
   animation: 3s spin linear infinite;
 }
@@ -121,10 +127,8 @@ main a {
   flex: 1;
   position: relative;
   padding: 25px 0px;
-  border: 2px black solid;
   border-radius: 40px;
   background-color: white;
-  transition: 0.3s;
 }
 
 .Frontend-button img {
@@ -135,7 +139,6 @@ main a {
 .Frontend-button:hover:before {
   filter: blur(1.5rem);
   opacity: 0.5;
-  transition: 0.3s;
 }
 
 .Frontend-button:hover::after,
@@ -146,19 +149,21 @@ main a {
   width: 100%;
   background-image: conic-gradient(
     from var(--angle),
-    skyblue,
     darkblue,
-    skyblue,
+    rgb(91, 91, 91, 0),
+    rgb(91, 91, 91, 0),
     darkblue,
-    skyblue
+    rgb(91, 91, 91, 0),
+    rgb(91, 91, 91, 0),
+    darkblue
   );
   top: 50%;
   left: 50%;
   translate: -50% -50%;
   z-index: -1;
-  padding: 3px;
+  padding: 2px;
   border-radius: 40px;
-  animation: 3s spin linear infinite;
+  animation: 4s spin linear infinite reverse;
 }
 
 @keyframes spin {
