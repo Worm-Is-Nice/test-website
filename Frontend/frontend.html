@@ -2,18 +2,35 @@
 <html>
   <head>
     <title>Frontend Hub</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@200..700&display=swap"
+      rel="stylesheet"
+    />
     <style>
       body {
         margin: 0px;
-        padding: 50px 300px;
-        background-color: #16423c;
+        padding: 7vh 20vw;
+        background-color: rgb(229, 229, 229);
       }
 
       main {
-        display: flex;
-        flex-direction: row;
-        align-items: center;
-        flex-wrap: wrap;
+        display: grid;
+        column-gap: 0.7rem;
+        row-gap: 0.7rem;
+      }
+
+      @media only screen and (max-width: 768px) {
+        main {
+          grid-template-columns: 1fr;
+        }
+      }
+
+      @media only screen and (min-width: 769px) {
+        main {
+          grid-template-columns: 1fr 1fr 1fr;
+        }
       }
 
       div {
@@ -21,21 +38,31 @@
         flex-direction: column;
         align-items: center;
 
-        flex: 1;
-        margin: 10px;
+        padding: 1.9em;
 
-        border: 2px #c4dad2 solid;
-        border-radius: 10px;
-        padding: 30px;
+        border: 2px black solid;
+        border-radius: 0.6rem;
+        background-color: white;
+        font-family: Bebas Neue, Arial, "Helvetica Neue", Helvetica, sans-serif;
+      }
+
+      section {
+        margin-bottom: 1.3rem;
+      }
+
+      h1 {
+        margin: 0px;
+        font-weight: 700;
+        font-size: 2.1rem;
+        color: black;
+        text-align: center;
       }
 
       p {
         margin: 0px;
-        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+        text-align: center;
         font-weight: 700;
-        margin-bottom: 40px;
-        font-size: 35px;
-        color: #c4dad2;
+        font-size: 1.5rem;
       }
 
       a {
@@ -43,108 +70,170 @@
         align-items: center;
         justify-content: center;
 
-        background-color: #c4dad2;
-        border: 1px #16423c solid;
-        border-radius: 30px;
+        border: 1px black solid;
+        border-radius: 2em;
         box-shadow: 2px 2px 5px 1px rgba(0, 0, 0, 0.5);
-        margin-bottom: 20px;
-        padding: 15px;
+        margin-bottom: 1.25em;
+        padding: 1em;
 
-        font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
-        font-weight: 700;
-        font-size: 15px;
+        font-weight: 500;
+        font-size: 1rem;
         text-decoration: none;
         text-wrap: nowrap;
         overflow: hidden;
-        color: #16423c;
+        color: black;
 
-        transition: 0.3s;
+        transition: 0.25s ease;
       }
 
       a:hover {
-        border-radius: 5px;
+        border-radius: 0.5em;
       }
     </style>
   </head>
   <body>
     <main>
       <div>
-        <p>1</p>
-        <a class="button" href="qr-code-component-main/og-verison.html"
+        <section>
+          <h1>Task 1</h1>
+          <p>QR Code</p>
+        </section>
+        <a
+          class="button"
+          href="qr-code-component-main/images/desktop-design.jpg"
           >Original</a
+        >
+        <a class="button" href="qr-code-component-main/og-verison.html"
+          >My Replica</a
         >
         <a class="button" href="qr-code-component-main/my-verison.html"
           >My Version</a
         >
       </div>
       <div>
-        <p>2</p>
+        <section>
+          <h1>Task 2</h1>
+          <p>N/A</p>
+        </section>
         <a class="button" href="">Original</a>
+        <a class="button" href="">My Replica</a>
         <a class="button" href="">My Version</a>
       </div>
       <div>
-        <p>3</p>
+        <section>
+          <h1>Task 3</h1>
+          <p>N/A</p>
+        </section>
         <a class="button" href="">Original</a>
+        <a class="button" href="">My Replica</a>
         <a class="button" href="">My Version</a>
       </div>
       <div>
-        <p>4</p>
+        <section>
+          <h1>Task 4</h1>
+          <p>N/A</p>
+        </section>
         <a class="button" href="">Original</a>
+        <a class="button" href="">My Replica</a>
         <a class="button" href="">My Version</a>
       </div>
       <div>
-        <p>5</p>
+        <section>
+          <h1>Task 5</h1>
+          <p>N/A</p>
+        </section>
         <a class="button" href="">Original</a>
+        <a class="button" href="">My Replica</a>
         <a class="button" href="">My Version</a>
       </div>
       <div>
-        <p>6</p>
+        <section>
+          <h1>Task 6</h1>
+          <p>N/A</p>
+        </section>
         <a class="button" href="">Original</a>
+        <a class="button" href="">My Replica</a>
         <a class="button" href="">My Version</a>
       </div>
       <div>
-        <p>7</p>
+        <section>
+          <h1>Task 7</h1>
+          <p>N/A</p>
+        </section>
         <a class="button" href="">Original</a>
+        <a class="button" href="">My Replica</a>
         <a class="button" href="">My Version</a>
       </div>
       <div>
-        <p>8</p>
+        <section>
+          <h1>Task 8</h1>
+          <p>N/A</p>
+        </section>
         <a class="button" href="">Original</a>
+        <a class="button" href="">My Replica</a>
         <a class="button" href="">My Version</a>
       </div>
       <div>
-        <p>9</p>
+        <section>
+          <h1>Task 9</h1>
+          <p>N/A</p>
+        </section>
         <a class="button" href="">Original</a>
+        <a class="button" href="">My Replica</a>
         <a class="button" href="">My Version</a>
       </div>
       <div>
-        <p>10</p>
+        <section>
+          <h1>Task 10</h1>
+          <p>N/A</p>
+        </section>
         <a class="button" href="">Original</a>
+        <a class="button" href="">My Replica</a>
         <a class="button" href="">My Version</a>
       </div>
       <div>
-        <p>11</p>
+        <section>
+          <h1>Task 11</h1>
+          <p>N/A</p>
+        </section>
         <a class="button" href="">Original</a>
+        <a class="button" href="">My Replica</a>
         <a class="button" href="">My Version</a>
       </div>
       <div>
-        <p>12</p>
+        <section>
+          <h1>Task 12</h1>
+          <p>N/A</p>
+        </section>
         <a class="button" href="">Original</a>
+        <a class="button" href="">My Replica</a>
         <a class="button" href="">My Version</a>
       </div>
       <div>
-        <p>13</p>
+        <section>
+          <h1>Task 13</h1>
+          <p>N/A</p>
+        </section>
         <a class="button" href="">Original</a>
+        <a class="button" href="">My Replica</a>
         <a class="button" href="">My Version</a>
       </div>
       <div>
-        <p>14</p>
+        <section>
+          <h1>Task 14</h1>
+          <p>N/A</p>
+        </section>
         <a class="button" href="">Original</a>
+        <a class="button" href="">My Replica</a>
         <a class="button" href="">My Version</a>
       </div>
       <div>
-        <p>15</p>
+        <section>
+          <h1>Task 15</h1>
+          <p>N/A</p>
+        </section>
         <a class="button" href="">Original</a>
+        <a class="button" href="">My Replica</a>
         <a class="button" href="">My Version</a>
       </div>
     </main>
