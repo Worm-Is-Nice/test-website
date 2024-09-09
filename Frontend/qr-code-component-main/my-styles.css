@@ -24,7 +24,7 @@ main {
   border-radius: 15px;
   border: 2px rgb(255, 255, 255) solid;
 
-  backdrop-filter: blur(10px);
+  backdrop-filter: blur(3px);
   box-shadow: 1px 1px 8px rgb(255, 255, 255),
     inset 1px 1px 8px rgb(255, 255, 255);
 }
@@ -47,11 +47,11 @@ main img {
   border-radius: 20px;
   border: 2px rgb(255, 255, 255) solid;
   padding: 8px;
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
 }
 
 .paragraph {
-  background-color: rgba(255, 255, 255, 0.3);
+  background-color: rgba(255, 255, 255, 0.5);
   color: rgb(255, 255, 255);
   font-weight: 500;
   font-size: 15px;
